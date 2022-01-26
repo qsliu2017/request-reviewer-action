@@ -1,0 +1,12 @@
+name: "Request reviewer"
+description: "Request reviewers for a pull request"
+inputs:
+  token:
+    description: "GitHub token"
+    required: true
+  reviewers:
+    description: "List of GitHub usernames to request review, separated by multiline"
+    required: true
+runs:
+  using: "node16"
+  main: "dist/index.js"
